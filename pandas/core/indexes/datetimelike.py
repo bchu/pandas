@@ -213,7 +213,8 @@ class DatetimeIndexOpsMixin(DatetimeLikeArrayMixin):
         nv.validate_take(tuple(), kwargs)
         indices = ensure_int64(indices)
 
-        maybe_slice = lib.maybe_indices_to_slice(indices, len(self))
+        max_len = min(len(self), 2**31)
+        maybe_slice = lib.maybe_indices_to_slice(indices, max_len)
         if isinstance(maybe_slice, slice):
             return self[maybe_slice]
 
