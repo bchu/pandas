@@ -420,7 +420,7 @@ def has_infs_f8(ndarray[float64_t] arr) -> bool:
     return False
 
 
-def maybe_indices_to_slice(ndarray[int64_t] indices, int max_len):
+def maybe_indices_to_slice(ndarray[int64_t] indices, Py_ssize_t max_len):
     cdef:
         Py_ssize_t i, n = len(indices)
         int k, vstart, vlast, v
