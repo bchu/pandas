@@ -125,6 +125,7 @@ def test_geopandas():
 
 
 # Cython import warning
+@pytest.mark.skip()
 @pytest.mark.filterwarnings("ignore:can't resolve:ImportWarning")
 def test_pyarrow(df):
 
