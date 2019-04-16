@@ -8,6 +8,8 @@ from warnings import catch_warnings
 import numpy as np
 import pytest
 
+pytestmark = pytest.mark.skip()
+
 from pandas._libs.tslib import iNaT
 from pandas.errors import PerformanceWarning
 
