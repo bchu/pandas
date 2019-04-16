@@ -79,10 +79,12 @@ else
     echo "Not using ccache"
 fi
 
-echo "conda install pyarrow -c conda-forge"
+echo "pip install -U pyarrow"
 
 echo "source deactivate"
 source deactivate
+
+echo "pip install -U pyarrow"
 
 echo "conda list (root environment)"
 conda list
