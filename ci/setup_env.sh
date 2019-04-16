@@ -79,6 +79,8 @@ else
     echo "Not using ccache"
 fi
 
+echo "conda install pyarrow -c conda-forge"
+
 echo "source deactivate"
 source deactivate
 

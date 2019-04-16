@@ -84,7 +84,6 @@ install:
   - ci/prep_cython_cache.sh
   - ci/setup_env.sh
   - ci/submit_cython_cache.sh
-  - pip install -U pyarrow
   - echo "install done"
 
 script:
