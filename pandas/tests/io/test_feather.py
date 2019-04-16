@@ -10,6 +10,8 @@ from pandas.util.testing import assert_frame_equal, ensure_clean
 
 from pandas.io.feather_format import read_feather, to_feather  # noqa:E402
 
+pytestmark = pytest.mark.skip()
+
 pyarrow = pytest.importorskip('pyarrow')
 
 
